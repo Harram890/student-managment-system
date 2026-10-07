@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+}
+
+.navbar {
+  height: 80px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-left: 260px;
+  box-sizing: border-box;
+  position: fixed;
+  gap: 400px;
+}
+
+/* Left Side */
+
+.navbar-left {
+  h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #111827;
+  }
+
+  p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #9ca3af;
+  }
+}
+
+/* Right Side */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* Search */
+
+.search-box {
+  width: 230px;
+  height: 40px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 13px;
+  transition: 0.3s;
+
+  svg {
+    color: #9ca3af;
+    font-size: 14px;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #111827;
+
+    &::placeholder {
+      color: #9ca3af;
+    }
+  }
+
+  &:focus-within {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.08);
+  }
+}
+
+/* Notification */
+
+.notification {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #f9fafb;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #4b5563;
+  font-size: 16px;
+  transition: 0.3s;
+
+  &:hover {
+    background: #eef2ff;
+    color: #4f46e5;
+  }
+
+  span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    min-width: 17px;
+    height: 17px;
+    padding: 0 4px;
+    border-radius: 50%;
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Profile */
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-info {
+  h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+  }
+
+  p {
+    margin: 3px 0 0;
+    font-size: 11px;
+    color: #9ca3af;
+  }
+}

@@ -1,0 +1,262 @@
+.settings-page {
+  // width: 100%;
+  // min-height: 100vh;
+  padding: 30px;
+  background: #f7f8fa;
+  box-sizing: border-box;
+  margin-left: 250px;
+ overflow-x: hidden;
+}
+
+/* Header */
+.settings-header {
+  
+    margin-top: 100px;
+
+  margin-bottom: 25px;
+
+  h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1f2937;
+  }
+
+  p {
+    margin-top: 6px;
+    color: #6b7280;
+    font-size: 15px;
+  }
+}
+
+/* Main Card */
+.settings-card {
+  max-width: 950px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Title */
+.settings-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 5px;
+}
+
+.settings-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4f46e5;
+  font-size: 21px;
+}
+
+.settings-title h2 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 20px;
+}
+
+.settings-title p {
+  margin: 5px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Setting Item */
+.setting-item {
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 5px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.setting-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  > svg {
+    width: 20px;
+    color: #4f46e5;
+    font-size: 19px;
+  }
+
+  h3 {
+    margin: 0;
+    color: #1f2937;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 5px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+  }
+}
+
+/* Edit / Manage / Change Buttons */
+.setting-item > button {
+  border: none;
+  background: #4f46e5;
+  color: white;
+  padding: 9px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.setting-item > button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+/* Forms */
+.settings-form {
+  margin: 5px 0 10px;
+  padding: 22px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  label {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    background: white;
+    color: #1f2937;
+    font-size: 14px;
+    transition: 0.2s ease;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+  }
+}
+
+/* Save Button */
+.save-settings-btn {
+  align-self: flex-start;
+  margin-top: 10px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.save-settings-btn:hover {
+  background: #4338ca;
+}
+
+/* Notification Settings */
+.notification-form {
+  gap: 15px;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    accent-color: #4f46e5;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 20px;
+  }
+
+  .settings-card {
+    padding: 20px;
+  }
+
+  .settings-title {
+    align-items: flex-start;
+  }
+
+  .setting-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .setting-item > button {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .settings-page {
+    padding: 15px;
+  }
+
+  .settings-card {
+    padding: 16px;
+  }
+
+  .settings-header h1 {
+    font-size: 25px;
+  }
+
+  .settings-title h2 {
+    font-size: 18px;
+  }
+
+  .setting-info {
+    gap: 12px;
+  }
+
+  .setting-item > button {
+    width: 100%;
+  }
+
+  .save-settings-btn {
+    width: 100%;
+  }
+}
